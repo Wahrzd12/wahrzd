@@ -1,0 +1,59 @@
+*{
+    background-color: black;
+
+}
+.item{
+    width: 450px;
+    height: 350px;
+    background-color: white;
+    margin-top: 150px;
+    margin-left: 450px;
+    display: flex;
+    justify-content: center;
+}
+.circle{
+    margin-right: 325px;
+    width: 135px;
+    height: 135px;
+    background-color: aqua;
+    position: relative;
+    left: 0;
+    animation-name: circle;
+    animation-duration: 3;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.circle:hover{
+    animation-play-state: paused;
+}
+@keyframes circle{
+    0%{
+        left: 350px;
+        background-color:red ;
+    }
+    15%{
+        left: 550px;
+        background-color: palevioletred;
+    }
+    25%{
+        bottom: 150px;
+        background-color: plum;
+    }
+    55%{
+         right:550px ;
+         background-color: blue;
+    }
+    65%{
+       right: 150px;
+       background-color: coral;
+    }
+    84%{
+        top: 250px;
+        background-color: fuchsia;
+    }
+    100%{
+      top: 100px;
+      background-color: limegreen;
+    }
+}
+
